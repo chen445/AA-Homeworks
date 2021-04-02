@@ -20,16 +20,4 @@ class Stack
     end
 end
 
-b = Stack.new
-p b.push("cook")
-p b.pop
-p b 
-b.push("cook")
-b.push("icecream")
-b.push("pizza")
-b.push("rice")
-b.pop
-p b
-p b.peek
-p b
 
