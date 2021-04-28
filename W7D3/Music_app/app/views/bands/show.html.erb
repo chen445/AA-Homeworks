@@ -1,0 +1,8 @@
+<h1><%@band.name%><h1>
+<a href=<%= edit_band_url(@band) %>> Edit this band</a>
+<ul>
+    <%@band.albums.each do |album|%>
+    <li><a href="<%=album_url(album)%>"> <%=album.name%></li>
+    <%end%>
+</ul>
+

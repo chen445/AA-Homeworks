@@ -1,0 +1,22 @@
+<a href=<%= edit_albums_url(@album) %>>Edit album</a>
+<form action=<%= albums_url(@album) %> method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete album">
+<ul>
+    <li>
+        <%=@album.name%>
+    </li>
+
+    <li>
+        <%=@album.band%>
+    </li>
+
+    <li>
+        <%=@album.live%>
+    </li>
+
+    <li>
+        <%=@album.year%>
+    </li>
+</ul>
+</form>
